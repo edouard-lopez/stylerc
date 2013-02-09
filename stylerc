@@ -1,0 +1,59 @@
+#!/bin/bash
+
+
+_underline_="$(tput sgr 0 1)"        # Underline
+_bold_="$(tput bold)"                # Bold
+_reset_="$(tput sgr0)"              # Reset
+
+_info_="$(tput setaf 6)"             # blue/information
+_warning_="$(tput setaf 3)"          # yellow/warning
+_error_="${_bold}$(tput setaf 1)"    # red/error
+_value_="$(tput setaf 7)"            # value/white
+_valid_="$(tput setaf 2)"            # valid/green
+
+
+# style text as underline
+function _underline() {
+    printf "${_underline_}%s${_reset_}" "$1"
+}
+
+# style text as bold
+function _bold() {
+    printf "${_bold_}%s${_reset_}" "$1"
+}
+
+# style text as info
+function _info() {
+    printf "${_info_}%s${_reset_}" "$1"
+}
+
+# style text as warning
+function _warning() {
+    printf "${_warning_}%s${_reset_}" "$1"
+}
+
+# style text as error
+function _error() {
+    printf "${_error_}%s${_reset_}" "$1"
+}
+
+# style text as value
+function _value() {
+    printf "${_value_}%s${_reset_}" "$1"
+}
+
+# style text as valid
+function _valid() {
+    printf "${_valid_}%s${_reset_}" "$1"
+}
+
+
+
+
+
+
+
+
+
+
+
