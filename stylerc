@@ -7,7 +7,7 @@ _reset_="$(tput sgr0)"              # Reset
 
 _info_="$(tput setaf 6)"             # blue/information
 _warning_="$(tput setaf 3)"          # yellow/warning
-_error_="${_bold}$(tput setaf 1)"    # red/error
+_error_="${_bold_}$(tput setaf 1)"    # red/error
 _value_="$(tput setaf 7)"            # value/white
 _valid_="$(tput setaf 2)"            # valid/green
 
@@ -48,8 +48,9 @@ function _valid() {
 }
 
 
-
-
+_i="$(_info "[i]")"
+_w="$(_warning "[×]")"
+_e="$(_error "[!]")"
 
 
 
