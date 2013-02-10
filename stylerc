@@ -1,5 +1,12 @@
 #!/bin/bash
-
+# DESCRIPTION
+#   Define some variables and function to help format output
+#
+# USAGE
+#   1. (optionnal) set the path to the stylerc :
+#       export STYLERC="$HOME/path/to/stylerc"
+#   2. include style to your script :
+#       source "$STYLERC" # include style
 
 _underline_="$(tput sgr 0 1)"        # Underline
 _bold_="$(tput bold)"                # Bold
