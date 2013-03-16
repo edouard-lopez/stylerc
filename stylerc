@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 # DESCRIPTION
 #   Define some variables and function to help format output
 #
