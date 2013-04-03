@@ -21,37 +21,35 @@ _valid_="$(tput setaf 2)"            # valid/green
 
 # style text as underline
 function _underline() {
-    printf "${_underline_}%s${_reset_}" "$@"
+    printf "${_underline_}%s${_reset_}" "$*"
 }
 
 # style text as bold
 function _bold() {
-    printf "${_bold_}%s${_reset_}" "$@"
+    printf "${_bold_}%s${_reset_}" "$*"
 }
 
 # style text as info
 function _info() {
-    printf "${_info_}%s${_reset_}" "$@"
+    printf "${_info_}%s${_reset_}" "$*"
 }
 
 # style text as warning
 function _warning() {
-    printf "${_warning_}%s${_reset_}" "$@"
+    printf "${_warning_}%s${_reset_}" "$*"
 }
 
 # style text as error
 function _error() {
-    printf "${_error_}%s${_reset_}" "$@"
+    printf "${_error_}%s${_reset_}" "$*"
 }
 
 # style text as value
-function _value() {
-    printf "${_value_}%s${_reset_}" "$@"
-}
+function _value() {printf "${_value_}%s${_reset_}" "$*"}
 
 # style text as valid
 function _valid() {
-    printf "${_valid_}%s${_reset_}" "$@"
+    printf "${_valid_}%s${_reset_}" "$*"
 }
 
 
