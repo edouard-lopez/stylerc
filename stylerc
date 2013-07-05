@@ -45,7 +45,9 @@ function _error() {
 }
 
 # style text as value
-function _value() {printf "${_value_}%s${_reset_}" "$*"}
+function _value() {
+  printf "${_value_}%s${_reset_}" "$*"
+}
 
 # style text as valid
 function _valid() {
