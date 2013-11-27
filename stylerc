@@ -55,6 +55,7 @@ function _valid() {
 }
 
 
+_v="$(_valid "[i]")"
 _i="$(_info "[i]")"
 _w="$(_warning "[×]")"
 _e="$(_error "[!]")"
